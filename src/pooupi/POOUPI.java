@@ -35,6 +35,16 @@ public class POOUPI {
                JOptionPane.showMessageDialog(null, "El modelo del taxi es: " +taxi.modelo);
                JOptionPane.showMessageDialog(null, "El odometro del taxi es: " +taxi.odometro);
 
+               POOUPI bus = new POOUPI();
+               bus.color = JOptionPane.showInputDialog("Digite el color del bus");
+               bus.marca = JOptionPane.showInputDialog("Digite la marca del bus");
+               bus.modelo = JOptionPane.showInputDialog("Digite el modelo del bus");
+               bus.odometro = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el odometro del bus:"));
+               
+               JOptionPane.showMessageDialog(null, "El color del bus es: " +bus.color);
+               JOptionPane.showMessageDialog(null, "La marca del bus es: " +bus.marca);
+               JOptionPane.showMessageDialog(null, "El modelo del bus es: " +bus.modelo);
+               JOptionPane.showMessageDialog(null, "El odometro del bus es: " +bus.odometro);
     }
 
 }
